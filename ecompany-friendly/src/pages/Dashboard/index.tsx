@@ -12,8 +12,8 @@ const Dashboard = () => {
   return (
     <>
       <StyledHomepage>
-        <Elipse src={elipse} alt="imagem da elipse verde do fundo" />
         <Background src={background} alt="fundo preto" />
+        <Elipse src={elipse} alt="imagem da elipse verde do fundo" />
         <nav className="home-nav">
           <div className="logo">
             <img
@@ -22,7 +22,7 @@ const Dashboard = () => {
             />
             <h1>eCOMPANY friendly</h1>
           </div>
-          <div>
+          <div className="user-info">
             <Profile
               src={profile}
               alt="imagem do perfil do usuário logado"
@@ -30,23 +30,16 @@ const Dashboard = () => {
             <h2>Nicolly Alves</h2>
             <img src={logout} alt="imagem para fazer logout na conta" />
           </div>
-          <div>
-            <div>
-              <input type="text" />
-              <img
-                src={lupapesquisa}
-                alt="imagem da lupa de pesquisa para filtrar material"
-              />
-            </div>
-
+          <div className="search">
+            <input type="text" />
+            <img
+              src={lupapesquisa}
+              alt="imagem da lupa de pesquisa para filtrar material"
+            />
             <img src={addmaterial} alt="imagem para publicar novo material" />
           </div>
         </nav>
-        <main>
-          <ul>
-            <li></li>
-          </ul>
-        </main>
+        <main>ul</main>
       </StyledHomepage>
     </>
   );
