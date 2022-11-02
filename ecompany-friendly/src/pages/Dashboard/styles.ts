@@ -39,7 +39,7 @@ export const StyledHomepage = styled.section`
 `;
 
 export const Profile = styled.img`
-  width: 40px;
+  width: 40px; 
   height: 40px;
   border-radius: 15px;
 `
