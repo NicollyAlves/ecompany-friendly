@@ -1,10 +1,13 @@
+import Dashboard from "./pages/Dashboard";
+import GlobalStyles from "./styles/global";
 
-const App = () => { 
+const App = () => {
   return (
     <>
-      <h1>Oi</h1>
+      <GlobalStyles />
+      <Dashboard />
     </>
   );
-}
+};
 
 export default App;
