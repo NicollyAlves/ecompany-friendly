@@ -1,5 +1,5 @@
 // import MaterialList from "../../components/MaterialList";
-import { StyledHomepage, Profile, Elipse, Background } from "./styles";
+import { StyledDashboard, Profile, Elipse, Background } from "./styles";
 import darkicon from "../../assets/ecology-maps-and-location-svgrepo-com 1.svg";
 import profile from "../../assets/blank-profile-picture-973460.svg";
 import logout from "../../assets/Exit_1_.svg";
@@ -11,10 +11,10 @@ import background from "../../assets/Rectangle 39.svg";
 const Dashboard = () => {
   return (
     <>
-      <StyledHomepage>
+      <StyledDashboard>
         <Background src={background} alt="fundo preto" />
         <Elipse src={elipse} alt="imagem da elipse verde do fundo" />
-        <nav className="home-nav">
+        <nav className="dash-nav">
           <div className="logo">
             <img
               src={darkicon}
@@ -22,25 +22,29 @@ const Dashboard = () => {
             />
             <h1>eCOMPANY friendly</h1>
           </div>
-          <div className="user-info">
-            <Profile
-              src={profile}
-              alt="imagem do perfil do usuário logado"
-            ></Profile>
-            <h2>Nicolly Alves</h2>
-            <img src={logout} alt="imagem para fazer logout na conta" />
-          </div>
-          <div className="search">
-            <input type="text" />
-            <img
-              src={lupapesquisa}
-              alt="imagem da lupa de pesquisa para filtrar material"
-            />
-            <img src={addmaterial} alt="imagem para publicar novo material" />
+          <div className="interative">
+            <div className="user-info">
+              <div className="user">
+                <Profile
+                  src={profile}
+                  alt="imagem do perfil do usuário logado"
+                ></Profile>
+                <h2>Nicolly Alves</h2>
+              </div>
+              <img src={logout} alt="imagem para fazer logout na conta" />
+            </div>
+            <div className="search">
+              <input type="text" />
+              <img className="lupa"
+                src={lupapesquisa}
+                alt="imagem da lupa de pesquisa para filtrar material"
+              />
+              <img src={addmaterial} alt="imagem para publicar novo material" />
+            </div>
           </div>
         </nav>
         <main>ul</main>
-      </StyledHomepage>
+      </StyledDashboard>
     </>
   );
 };

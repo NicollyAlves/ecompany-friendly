@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHomepage = styled.section`
+export const StyledDashboard = styled.section`
   background-color: var(--primary);
   height: 100%;
   width: 100%;
@@ -19,9 +19,9 @@ export const StyledHomepage = styled.section`
     display: flex;
   }
 
-  .home-nav {
+  .dash-nav {
     height: 25vh;
-    width: 87%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,33 +31,53 @@ export const StyledHomepage = styled.section`
     position: absolute;
     z-index: 2;
     top: 30px;
+    left: 10%;
     /* margin-top: 35px; */
   }
 
   .logo {
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     color: var(--secondary);
   }
 
+  .interative {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .user-info {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     color: var(--white);
   }
 
-  .user-info > h2,
-  p {
+  .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .user > h2 {
     color: var(--white);
   }
 
   .search {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   .container {
@@ -67,9 +87,30 @@ export const StyledHomepage = styled.section`
   }
 
   @media (min-width: 600px) {
-    .home-nav {
+    .dash-nav {
       flex-direction: row;
-      height: 8vh;
+      height: 10vh;
+      width: 85%;
+      left: 7.5%;
+    }
+
+    .logo {
+      width: 30%;
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
+
+    .interative {
+      flex-direction: row-reverse;
+    }
+
+    .user {
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .search > input {
+      width: 100%;
     }
   }
 `;
