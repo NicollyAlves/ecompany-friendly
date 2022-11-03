@@ -97,6 +97,12 @@ button {
     border: none;
     border-radius: 4px;
     background-color: transparent;
+}
+
+input {
+    height: 30px;
+    border-radius: 6px 6px 0px 6px;
+    border-style: none;
 }`;
 
 export default GlobalStyles;
