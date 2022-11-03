@@ -32,7 +32,6 @@ export const StyledDashboard = styled.section`
     z-index: 2;
     top: 30px;
     left: 10%;
-    /* margin-top: 35px; */
   }
 
   .logo {
@@ -49,6 +48,7 @@ export const StyledDashboard = styled.section`
     width: 80%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
   }
 
   .user-info {
