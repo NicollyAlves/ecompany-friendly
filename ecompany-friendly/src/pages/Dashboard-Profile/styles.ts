@@ -81,10 +81,35 @@ export const StyledDashboardProfile = styled.section`
       height: 190px;
       overflow-y: scroll;
     }
+    .search input{
+      max-width: 60%;
+      margin-left: -5px;
+    }
+    .lupa{
+      position: relative;
+      margin-left: -22%;
+
+      border-left: 1px solid #000000;
+      padding-left: 10px;
+    }
 
   }
 
   @media (min-width: 600px) {
+    .search{
+      width: 80%;
+    }
+    .search input{
+      max-width: 72%;
+      margin-left: -5px;
+    }
+    .lupa{
+      position: relative;
+      margin-left: -16%;
+
+      border-left: 1px solid #000000;
+      padding-left: 10px;
+    }
     aside{
       max-width: 25%;
       height: 70vh;
@@ -97,13 +122,13 @@ export const StyledDashboardProfile = styled.section`
       width: 90%;
     }
     .box-cards{
-      max-width: 60%;
+      max-width: 58%;
       top: 100px;
       left: 35%;
       flex-direction: row;
       flex-wrap: wrap;
       height: 70vh;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
     .card{
       width: 180px;
